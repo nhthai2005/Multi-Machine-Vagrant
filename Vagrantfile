@@ -15,13 +15,13 @@ Vagrant.configure("2") do |config|
     end
     
     (1..NODE_COUNT).each do |i|
-      config.vm.define "node#{i}" do |subconfig|
+      config.vm.define "worker#{i}" do |subconfig|
         subconfig.vm.box = BOX_IMAGE
-        subconfig.vm.hostname = "node#{i}"
+        subconfig.vm.hostname = "worker#{i}"
         subconfig.vm.network :private_network, ip: "172.16.10.#{i + 10}"
 
         subconfig.vm.provider "virtualbox" do |vb|
-          vb.name = "node#{i}"
+          vb.name = "worker#{i}"
           vb.cpus = 1
           vb.memory = "1024"
         end
