@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
       end
     end
 
-    # Install avahi on all machines 
+    # Install docker and kubernetes on all machines 
     # Chạy file install-docker-kube.sh sau khi nạp Box
     config.vm.provision "shell", path: "./install-docker-kube.sh" 
     # Chạy các lệnh shell
