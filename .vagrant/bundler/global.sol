@@ -1,0 +1,1 @@
+{"dependencies":[["vagrant-disksize",["= 0.1.3"]],["mini_portile2",["~> 2.4.0"]],["nokogiri",["~> 1.6"]],["iniparse",["> 1.0"]],["log4r",["~> 1.1"]],["concurrent-ruby",["~> 1.0"]],["i18n",["~> 1.0"]],["vagrant-vmware-esxi",["= 2.5.0"]]],"checksum":"b4555bad90f8f3fe44e5a8a9c6d8e58075e96bf5a2ee7223f4f68c839073c75a","vagrant_version":"2.2.9"}
